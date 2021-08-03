@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "cli-color": "^2.0.0",
+    "electron-updater": "^4.3.9",
     "sequelize": "^6.6.5",
     "tedious": "^11.4.0"
   }

@@ -1,5 +1,5 @@
 // Modules to control application life and create native browser window
-const { app, BrowserWindow, ipcMain, Notification, ipcRenderer } = require('electron')
+const { app, BrowserWindow, ipcMain, Notification, ipcRenderer } = require('electron');
 const fs = require('fs');
 const path = require('path');
 const Color = require('cli-color');
@@ -41,7 +41,7 @@ function createLoadingWindow() {
 
   loadingWindow.once('ready-to-show', () => {
     loadingWindow.show()
-  })
+  });
 
   // and load the index.html of the app.
   loadingWindow.loadFile('./client/LoadingPage/LoadingPage.html');

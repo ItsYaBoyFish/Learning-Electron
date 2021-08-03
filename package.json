@@ -1,0 +1,28 @@
+{
+  "name": "learning-electron",
+  "version": "1.0.0",
+  "description": "Learning Electron Development",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItsYaBoyFish/Learning-Electron.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ItsYaBoyFish/Learning-Electron/issues"
+  },
+  "homepage": "https://github.com/ItsYaBoyFish/Learning-Electron#readme",
+  "devDependencies": {
+    "electron": "^13.1.7"
+  },
+  "dependencies": {
+    "cli-color": "^2.0.0",
+    "sequelize": "^6.6.5",
+    "tedious": "^11.4.0"
+  }
+}

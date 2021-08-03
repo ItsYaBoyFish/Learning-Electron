@@ -1,9 +1,12 @@
 const { ipcRenderer } = require('electron');
 
-
 window.onload = function() {
   ipcRenderer.send("get-config");
 }
+
+ipcRenderer.on('get-config-response', (event, response) => {
+  console.log(response);
+})
 
 const loginBtn = document.getElementById('loginBtn');
 const username = document.getElementById('username');
@@ -12,19 +15,9 @@ const password = document.getElementById('password');
 const error_title = document.getElementById('err_title');
 const error_body = document.getElementById('err_body');
 
-
-
 loginBtn.addEventListener('click', login);
 
 
-
-ipcRenderer.on('check-db-response', (event, args) => {
-  console.log(args);
-})
-
-ipcRenderer.on('get-config-response', (event, response) => {
-  console.log(response);
-})
 
 function login() {
   ipcRenderer.send('check-db', {Test: 123});
@@ -42,7 +35,6 @@ function login() {
     
   }
 }
-
 
 function verifyInputs() {
   var inputsEntered = true; 
